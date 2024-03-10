@@ -5,13 +5,13 @@
     --spacecontent2: 10px;
   }
   .navbar-collapse{
-      background: #111;width: 100%;position: relative;z-index: 100;
+      background: darkgray;width: 100%;position: relative;z-index: 100;
   }
   .wrapper-text {
     width: 100%;
   }
   .wrapper {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%); */
     background-position: right;
     background-image: linear-gradient(rgb(21 21 22 / 0%), rgb(133 133 133)),
       url(./BrigitaBracko_hipnoterapija_hipnotransformacijska-metoda-1.webp);
@@ -97,8 +97,15 @@
         background-position: right;
         height: 550px;width: 100%
       }
-     
+      #secondlogo{
+        width: 220px!important
+      }
+      .navbar{
+        height: 100px;align-items: center
+      }
     }
+     
+    
 
     @media(min-width:1100px) and (max-width:1190px){
         .sec-7-content {
@@ -118,7 +125,7 @@
       width: 100%;
     }
     .wrapper {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+      /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%); */
       background-position: right;
       background-image: linear-gradient(rgb(21 21 22 / 0%), rgb(133 133 133)),
         url(./BrigitaBracko_hipnoterapija_hipnotransformacijska-metoda-1.webp);
@@ -195,6 +202,28 @@
     .navbar-collapse{
         background: #111;width: 100%;position: relative;z-index: 100;
     }
+    #secondlogo{
+      width: 220px!important
+    }
+    .navbar{
+      height: 100px;align-items: center
+    }
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      left: -400px; /* Adjust this value as needed */
+      width: 400px; /* Adjust this value as needed */
+      height: 100%;
+      padding-top: 50px;
+      background-color: darkgray; /* Adjust as needed */
+      transition: all 0.3s ease;
+      z-index:100000;
+      /* overflow-y: auto; Enable vertical scrolling */
+    }
+    .navbar-collapse.show {
+      left: 0;
+    }
+   
   }
 
   @media (min-width:1100px) and (max-width:1140px){
@@ -202,3 +231,25 @@
           padding:0px 80px
       }
   }
+ 
+  @media (max-width: 700px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Adjust this value as needed */
+    width: 250px; /* Adjust this value as needed */
+    height: 100%;
+    padding-top: 50px;
+    background-color: darkgray; /* Adjust as needed */
+    transition: all 0.3s ease;
+    overflow-y: auto; /* Enable vertical scrolling */
+    z-index:100000;
+  }
+  .navbar-collapse.show {
+    left: 0;
+  }
+  
+ 
+}
+
+  
