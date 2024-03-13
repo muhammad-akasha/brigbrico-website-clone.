@@ -8,6 +8,31 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 3500); // 3000 milliseconds = 3 seconds
   }, 0); // 3000 milliseconds = 3 seconds
 });
+
+
+
+const navbarToggle = document.getElementById('navbar-toggle');
+const navbarCollapse = document.getElementById('navbarSupportedContent');
+
+navbarToggle.addEventListener('click', () => {
+  navbarCollapse.classList.toggle('show');
+});
+
+document.addEventListener('click', (event) => {
+  if (!navbarCollapse.contains(event.target) && event.target !== navbarToggle) {
+    navbarCollapse.classList.remove('show');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  if (navbarCollapse.classList.contains('show')) {
+    navbarCollapse.classList.remove('show');
+  }
+});
+
+
+
+
 const texts = ["feelings", "future", "life"];
 const textContainer = document.getElementById("texttype");
 const blinkingLine = document.getElementById("blinking-line");
@@ -120,3 +145,4 @@ navLinks.forEach((link) => {
     }
   });
 });
+

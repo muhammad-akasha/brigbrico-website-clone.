@@ -1,12 +1,19 @@
+@media (max-width:300px){
+  .fiip-back-btn2{
+    width: fit-content;padding: 10px 30px 
+  }
+}
 @media (max-width: 576px) {
   :root {
     --space: 10px;
     --spacecontent: 10px;
     --spacecontent2: 10px;
   }
-  .navbar-collapse{
-      background: darkgray;width: 100%;position: relative;z-index: 100;
-  }
+ 
+.navbar{
+  padding: 0px
+}
+
   .wrapper-text {
     width: 100%;
   }
@@ -18,6 +25,9 @@
   }
   .section-1 {
     padding: 140px 10px;
+  }
+  .button{
+    text-align: center
   }
   .section-2-parent {
     flex-wrap: wrap;
@@ -113,7 +123,9 @@
         }
     }
 
-@media (max-width: 1100px) {
+ 
+
+@media  (min-width:575px) and (max-width: 1100px) {
     :root {
       --space: 40px;
       --spacecontent: 50px;
@@ -199,9 +211,9 @@
     .nav-last{
         display: none
     }
-    .navbar-collapse{
+    /* .navbar-collapse{
         background: #111;width: 100%;position: relative;z-index: 100;
-    }
+    } */
     #secondlogo{
       width: 220px!important
     }
@@ -216,12 +228,13 @@
       height: 100%;
       padding-top: 50px;
       background-color: darkgray; /* Adjust as needed */
-      transition: all 0.3s ease;
       z-index:100000;
-      /* overflow-y: auto; Enable vertical scrolling */
+      overflow-y: auto; /*Enable vertical scrolling*/
+      ;display: flex;flex-direction: column;align-items: center;justify-content: center;transition: all 0.2s ease
     }
     .navbar-collapse.show {
-      left: 0;
+      left: 0
+     
     }
    
   }
@@ -236,17 +249,17 @@
   .navbar-collapse {
     position: fixed;
     top: 0;
-    left: -250px; /* Adjust this value as needed */
+     left: -250px; /*Adjust this value as needed */
     width: 250px; /* Adjust this value as needed */
-    height: 100%;
+    height: 100vh;
     padding-top: 50px;
     background-color: darkgray; /* Adjust as needed */
-    transition: all 0.3s ease;
-    overflow-y: auto; /* Enable vertical scrolling */
-    z-index:100000;
+    overflow-y:auto; /* Enable vertical scrolling */
+    z-index:100000;display: flex;flex-direction: column;align-items: center;justify-content: center;transition: all 0.2s ease
+    
   }
   .navbar-collapse.show {
-    left: 0;
+    left: 0px;
   }
   
  
