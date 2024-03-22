@@ -211,9 +211,7 @@
     .nav-last{
         display: none
     }
-    /* .navbar-collapse{
-        background: #111;width: 100%;position: relative;z-index: 100;
-    } */
+  
     #secondlogo{
       width: 220px!important
     }
@@ -265,4 +263,13 @@
  
 }
 
+
+@media (max-width:992px){
+  footer{
+    position: relative!important;
+  }
+  .all-logo{
+    margin-bottom: 0px
+  }
+}
   

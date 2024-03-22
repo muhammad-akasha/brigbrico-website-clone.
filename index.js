@@ -67,10 +67,14 @@ window.addEventListener("scroll", function() {
     navbar.style.width = "100%";
     navbar.style.transition = "all ease-in-out 0.2s";
     navbar.style.zIndex = "1000000";
+    navbar.classList.add("fadeInDown");
+
   } else {
     navbar.style.setProperty("background-color", "transparent", "important");
     navbar.style.setProperty("color", "white", "important");
     navbar.style.position = "relative";
+    navbar.classList.remove("fadeInDown");
+
   }
 });
 
