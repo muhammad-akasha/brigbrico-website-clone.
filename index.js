@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
+  let html = document.documentElement;
+
+  // Hide scrollbar immediately
+  html.style.overflow = "hidden";
+
+  // Restore scrollbar after a delay of 3 seconds
+  setTimeout(function() {
+    html.style.overflow = "auto";
+  }, 3500);
+});
+document.addEventListener("DOMContentLoaded", function() {
   var loadingScreen = document.getElementById("loading-screen");
   
   setTimeout(function() {
