@@ -1,3 +1,6 @@
+window.onload = function() {
+  window.scrollTo(0, 0);
+};
 document.addEventListener("DOMContentLoaded", function() {
   let html = document.documentElement;
 
@@ -160,4 +163,3 @@ navLinks.forEach((link) => {
     }
   });
 });
-

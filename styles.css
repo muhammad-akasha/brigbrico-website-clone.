@@ -351,7 +351,7 @@ span {
       rgba(17, 18, 24, 0.52),
       rgba(68, 53, 64, 0.73)
     ),
-    url(./online\course.jpg);
+    url(./online\ course.jpg);
   width: 340px;
   background-size: cover;
   height: 400px;
@@ -410,12 +410,15 @@ span {
 }
 
 .flip-backimg-1 {
-  background-color: darkgray;
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
   padding: 0px 20px;
+  background-image: linear-gradient(
+      rgba(17, 18, 24, 0.52),
+      rgba(68, 53, 64, 0.73)
+    ), url("https://www.shutterstock.com/image-photo/male-mature-caucasian-ceo-businessman-600nw-2142010187.jpg");background-size: cover
 }
 .flip-backimg-2 {
   background-image: linear-gradient(
